@@ -4,7 +4,7 @@ include 'config.php';
 
 if (isset($_POST['value'])) {
     $input = $_POST['value'];
-    $select = "SELECT * FROM `products` where `Product_Name` Like '%$input%'";
+    $select = "SELECT * FROM `products` where `Product_Name` Like '%$input%' || `Product_Category` Like '%$input%' || `Product_Price` Like '%$input%';";
     $res = mysqli_query($con, $select);
     if (mysqli_num_rows($res) > 0) {
         while ($row = mysqli_fetch_assoc($res)) { ?>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 21, 2024 at 09:03 PM
+-- Generation Time: Apr 02, 2024 at 07:50 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `products` (
   `id` int(11) NOT NULL,
-  `Product_Name` varchar(20) DEFAULT NULL,
+  `Product_Name` varchar(30) DEFAULT NULL,
   `Product_Image` varchar(50) DEFAULT NULL,
   `Product_Category` varchar(20) DEFAULT NULL,
   `Product_Price` varchar(20) DEFAULT NULL,
@@ -41,11 +41,11 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `Product_Name`, `Product_Image`, `Product_Category`, `Product_Price`, `Product_Stock`) VALUES
-(1, 'Toshiba', 'laptop.jpg', 'Laptop', '90,000', 60),
-(2, 'Samsung', 'mobile1.jpg', 'Mobile', '75,000', 6),
-(3, 'Iphone', 'mobile2.jpg', 'Mobile', '95,000', 2),
-(4, 'Samsung', 'mobile3.jpg', 'Mobile', '55,000', 1),
-(5, 'Icon', 'logo.png', 'Picture', '500', 1);
+(1, 'Dress Shirt By J.', 'Shirt1.jpg', 'Clothes', '5000', 15),
+(2, 'Boot By J.', 'shoes-2.jpg', 'Footwear', '5500', 10),
+(3, 'Dress Pant By Gul Ahmed', 'black pant.png', 'Clothes', '4500', 10),
+(4, 'Mouse By Samsung', 'Mouse.jpg', 'Electronics', '1200', 10),
+(5, 'Wall Decoration', 'Wall decor.jpg', 'Decoration', '8000', 10);
 
 --
 -- Indexes for dumped tables
